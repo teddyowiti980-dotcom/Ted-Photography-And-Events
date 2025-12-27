@@ -1,17 +1,17 @@
-let currentSlide = 0;
+let index = 0;
 const slides = document.querySelectorAll(".slide");
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove("active"));
-    slides[index].classList.add("active");
+function showSlide(i) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[i].classList.add("active");
 }
 
 document.querySelector(".next").onclick = () => {
-    currentSlide = (currentSlide + 1) % slides.length;
-    showSlide(currentSlide);
+  index = (index + 1) % slides.length;
+  showSlide(index);
 };
 
 document.querySelector(".prev").onclick = () => {
-    currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-    showSlide(currentSlide);
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
 };
