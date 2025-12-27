@@ -1,43 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ted Photography and Events</title>
-  <style>
-    body { margin:0; font-family: Arial; background:#121212; color:#f0f0f0; }
-    header { background:#1c1c1c; padding:20px; text-align:center; }
-    header h1 { margin:0; color:#ff6f61; }
-    nav { display:flex; justify-content:center; background:#1c1c1c; }
-    nav a { color:#f0f0f0; text-decoration:none; margin:0 15px; padding:15px 0; }
-    nav a:hover { color:#ff6f61; }
-    .section { padding:50px 20px; max-width:1200px; margin:auto; }
-    .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px; }
-    .gallery img { width:100%; border-radius:12px; transition: transform 0.3s; }
-    .gallery img:hover { transform:scale(1.05); }
-    footer { text-align:center; padding:20px; background:#1c1c1c; font-size:14px; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ted Photography & Events</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <header>
-    <h1>Ted Photography and Events</h1>
-  </header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <section class="section">
-    <h2>Portfolio</h2>
-    <div class="gallery">
-      <img src="images/image1.jpg" alt="Wedding Photography">
-      <img src="images/image2.jpg" alt="Night Pub Photography">
-      <img src="images/image3.jpg" alt="Event Coverage">
-      <img src="images/image4.jpg" alt="Photography Sample">
-    </div>
-  </section>
-  <footer>
-    &copy; 2025 Ted Photography and Events. All rights reserved.
-  </footer>
+
+    <!-- HEADER / LOGO -->
+    <header class="site-header">
+        <div class="branding">
+            <img src="images/logo.png" alt="Ted Photography Logo" class="logo">
+            <div class="brand-text">
+                <h1>Ted Photography & Events</h1>
+                <p>Capturing your best moments in Nairobi</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- SERVICES -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <p>Professional photography and content solutions tailored to your needs.</p>
+        <ul>
+            <li><i class="fas fa-camera-retro"></i> Wedding Photography</li>
+            <li><i class="fas fa-users"></i> Event Photography</li>
+            <li><i class="fas fa-moon"></i> Night Pub Photography</li>
+            <li><i class="fas fa-pencil-alt"></i> Content Creation & Social Media Management</li>
+            <li><i class="fas fa-image"></i> Photo Editing & Retouching</li>
+            <li><i class="fas fa-portrait"></i> Portraits & Solo Photoshoots</li>
+        </ul>
+    </section>
+
+    <!-- PORTFOLIO SLIDER -->
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+
+        <div class="slider">
+            <button class="prev">&#10094;</button>
+
+            <div class="slides">
+                <img src="images/photo1.jpg" class="slide active">
+                <img src="images/photo2.jpg" class="slide">
+                <img src="images/photo3.jpg" class="slide">
+                <img src="images/photo4.jpg" class="slide">
+            </div>
+
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Let’s create something amazing together.</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:teddyowiti980@gmail.com">teddyowiti980@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+254718471300">+254 718 471 300</a></li>
+            <li><strong>Location:</strong> Nairobi, Kenya</li>
+        </ul>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Ted Photography & Events</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
 </body>
 </html>
