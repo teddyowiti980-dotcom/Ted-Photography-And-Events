@@ -1,1 +1,1 @@
-# Ted-Potfolio
+# Ted Photography And Events
