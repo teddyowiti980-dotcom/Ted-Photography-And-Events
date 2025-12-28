@@ -4,88 +4,95 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Ted Photography & Events</title>
-
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- HEADER -->
-<header class="header">
-  <div class="brand">
-    <img src="images/logo.png" alt="Ted Photography Logo" />
-    <div>
-      <h1>Ted Photography & Events</h1>
-      <p>Capturing moments • Creating memories</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container">
+      <img src="assets/logo.png" alt="Ted Photography Logo" class="logo">
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </div>
-</header>
+  </header>
 
-<!-- HERO -->
-<section class="hero">
-  <h2>Professional Photography in Nairobi</h2>
-  <p>
-    From weddings and events to nightlife and content creation,
-    we capture your story with style and emotion.
-  </p>
-  <a href="#contact" class="btn">Book a Session</a>
-</section>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Ted Photography & Events</h1>
+      <p>Capturing moments. Telling stories. Creating memories.</p>
+      <a href="#contact" class="btn">Book a Session</a>
+    </div>
+  </section>
 
-<!-- SERVICES -->
-<section class="services">
-  <h2>Our Services</h2>
-  <div class="service-grid">
-    <div><i class="fas fa-ring"></i> Wedding Photography</div>
-    <div><i class="fas fa-users"></i> Event Photography</div>
-    <div><i class="fas fa-moon"></i> Night Pub Photography</div>
-    <div><i class="fas fa-camera"></i> Portrait & Solo Shoots</div>
-    <div><i class="fas fa-pen"></i> Content Creation</div>
-    <div><i class="fas fa-image"></i> Photo Editing & Retouching</div>
-  </div>
-</section>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Ted</h2>
+      <p>
+        I’m Ted, a Nairobi-based photographer passionate about capturing real emotions,
+        unforgettable events, and powerful visual stories. From weddings and events
+        to nightlife and brand content, I deliver clean, creative, and professional photography.
+      </p>
+    </div>
+  </section>
 
-<!-- PORTFOLIO -->
-<section class="portfolio">
-  <h2>Portfolio</h2>
+  <!-- SERVICES -->
+  <section id="services" class="section dark">
+    <div class="container">
+      <h2>Services</h2>
+      <div class="services">
+        <div class="card">Wedding Photography</div>
+        <div class="card">Event Coverage</div>
+        <div class="card">Nightlife & Club Photography</div>
+        <div class="card">Portraits & Personal Shoots</div>
+        <div class="card">Content Creation</div>
+        <div class="card">Social Media Visuals</div>
+      </div>
+    </div>
+  </section>
 
-  <div class="slider">
-    <button class="prev">&#10094;</button>
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="gallery">
+        <img src="assets/placeholder.jpg" alt="Portfolio image">
+        <img src="assets/placeholder.jpg" alt="Portfolio image">
+        <img src="assets/placeholder.jpg" alt="Portfolio image">
+        <img src="assets/placeholder.jpg" alt="Portfolio image">
+        <img src="assets/placeholder.jpg" alt="Portfolio image">
+        <img src="assets/placeholder.jpg" alt="Portfolio image">
+      </div>
+    </div>
+  </section>
 
-    <img src="images/placeholder1.jpg" class="slide active">
-    <img src="images/placeholder2.jpg" class="slide">
-    <img src="images/placeholder3.jpg" class="slide">
-    <img src="images/placeholder4.jpg" class="slide">
+  <!-- CONTACT -->
+  <section id="contact" class="section dark">
+    <div class="container">
+      <h2>Contact & Booking</h2>
+      <p>Let’s work together.</p>
 
-    <button class="next">&#10095;</button>
-  </div>
+      <div class="contact-box">
+        <p><strong>Phone / WhatsApp:</strong> +254 718 471 300</p>
+        <p><strong>Email:</strong> teddyowiti980@gmail.com</p>
+        <p><strong>Location:</strong> Nairobi, Kenya</p>
 
-  <p class="note">*Images shown are placeholders. Real work coming soon.</p>
-</section>
+        <a href="https://wa.me/254718471300" class="btn">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-  <h2>Contact</h2>
-  <p>Let’s capture something unforgettable.</p>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Ted Photography & Events. All rights reserved.</p>
+  </footer>
 
-  <ul>
-    <li><strong>Email:</strong> <a href="mailto:teddyowiti980@gmail.com">teddyowiti980@gmail.com</a></li>
-    <li><strong>Phone:</strong> <a href="tel:+254718471300">+254 718 471 300</a></li>
-    <li><strong>Location:</strong> Nairobi, Kenya</li>
-  </ul>
-
-  <a class="btn whatsapp"
-     href="https://wa.me/254718471300"
-     target="_blank">
-     <i class="fab fa-whatsapp"></i> WhatsApp Me
-  </a>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <p>© 2025 Ted Photography & Events • All Rights Reserved</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
